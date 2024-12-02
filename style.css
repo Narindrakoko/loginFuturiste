@@ -1,0 +1,110 @@
+/* Global styles */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .login-container {
+    perspective: 1000px;
+  }
+  
+  .login-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+    animation: float 1s ease-in-out infinite;
+    transform: rotateY(20deg);
+  }
+  
+  .login-card h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .login-card p {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #a7b6c1;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .input-group i {
+    color: #50d890;
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  .input-group input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    flex: 1;
+    font-size: 1em;
+  }
+  
+  .btn-login {
+    background: linear-gradient(45deg, #50d890, #1cb5e0);
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    width: 100%;
+  }
+  
+  .btn-login:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #1cb5e0, #50d890);
+  }
+  
+  .social-login {
+    margin-top: 20px;
+  }
+  
+  .social-login i {
+    color: #50d890;
+    font-size: 1.5em;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .social-login i:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotateY(20deg);
+    }
+    50% {
+      transform: translateY(-10px) rotateY(20deg);
+    }
+  }
+  
